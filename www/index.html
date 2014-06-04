@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script>
+        	var db = null;
+        	var db = openDatabase('TrackPin', '1.0', 'TrackPin', 2 * 1024 * 1024);
+        	
+        	$('document').ready(function() {
+                                
+                                
+        		var db = openDatabase('TrackPin', '1.0', 'TrackPin', 2 * 1024 * 1024);
+                                db.transaction(function(tx){
+                                            //tx.executeSql("DROP TABLE IF EXISTS games");
+                                            //tx.executeSql("DROP TABLE IF EXISTS frames");
+                tx.executeSql('CREATE TABLE IF NOT EXISTS games(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, created unique, alley, date DATETIME, weight)');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS frames(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, frame, ball1, ball2, ball3, comments, gameID)');
+        	});
+    });
+        </script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div id="container">
+            
+            <div class="header"><div id="home">Home</div> <div id="back">Back</div><div id="frameNum"></div> <div id="next">Next <img src="img/next.png" style="height:14px; width:14px; display:inline;"></div> </div>
+            <div id="welcome">
+            		<div id="logo"><img src="img/logo.png"></div>
+                    <div id="trackpin">Start Tracking Pins!</div>
+                    <div id="seeScores">See Scores </div>
+            </div>
+            
+            <div id="scores">
+                <ul>
+                    
+                </ul>
+            </div>
+            
+            <div id="details">
+            	<span id="noresults"></span>
+            	<ul>
+            	</ul>
+                
+            </div>
+                    
+                    
+            <div id="framedetails">
+            
+				<div id="ball1layout">
+				<h3>Ball 1</h3>
+				 <table id="framelayout">
+								<tr>
+									<td id="7"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="8"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="9"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="10"><img src="img/dot.png" class="dot"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="4"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="5"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="6"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td id="2"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="3"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td id="1"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+				</div>
+			
+			
+				<div id="ball2layout">
+					<h3>Ball 2</h3>
+					<table id="framelayout">
+								<tr>
+									<td id="7"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="8"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="9"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="10"><img src="img/dot.png" class="dot"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="4"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="5"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="6"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td id="2"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="3"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td id="1"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+					</table>
+				</div>
+			
+				<div id="ball3layout">
+					<h3>Ball 3</h3>
+					<table id="framelayout">
+								<tr>
+									<td id="7"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="8"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="9"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="10"><img src="img/dot.png" class="dot"></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="4"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="5"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="6"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td id="2"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td id="3"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td id="1"><img src="img/dot.png" class="dot"></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+					</table>
+				</div>
+            	
+            </div>
+            <div id="gameinfo">
+                <h2>Game Info</h2>
+                <div id="info">
+                    <ul>
+                        <li><input type="text" id="alley" name="alley" placeholder="Bowling Alley"></li>
+                        <li> Game Day: <br><input type="date" id="date" name="date" id="theDate" placeholder="date"></li>
+                        <li><input type="number" id="weight" name="weight" min="4" max="18"> lb ball</li>
+                    </ul>
+                    
+                </div>
+                <div id="start">Start Bowling!</div>
+            </div>
+            
+            <div id="frames">
+
+                <div id="frame">
+                    <div id="pins">
+                        <table id="layout">
+                            <tr>
+                                <td id="7"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="8"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="9"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="10"><img src="img/dot.png" class="dot"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td id="4"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="5"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="6"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td id="2"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td id="3"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td id="1"><img src="img/dot.png" class="dot"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <img src="img/strikeButton.png" id="strike">
+                    <p class="instructions">Comments for this frame:</p>
+                    <textarea placeholder="Comments for this Frame" id="frameComments" class="comments"> </textarea>
+                </div>
+            </div>
+
+            <div id="endgame">
+            	<div id="trackpin">Track Another Game!</div>
+                <div id="seeScores">See Scores </div>
+            </div>
+        
+        </div>
+       
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>

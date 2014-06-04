@@ -1,0 +1,517 @@
+html, body {
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    font-family:"HelveticaNeue-Light";
+    background-color:#000;
+}
+
+.header {
+    width:100%;
+    height:27px;
+    background-image:linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    padding:12px 0;
+    position:absolute;
+    z-index:999;
+}
+
+#logo {
+	width:80%;
+	margin:auto;
+	position:relative;
+}
+
+#logo img {
+	width:100%;
+	text-align:center;
+}
+
+
+
+	#frameNum {
+    font-weight: bold;
+    width: 165px;
+    height: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding:0;
+    float:left;
+	}
+
+	#next{
+		background-image:linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+		width:55px;
+		height:20px;
+		color:#000;
+		float:right;
+		margin:10px 10px 10px 0;
+		text-align:center;
+		border:1px  #000;
+		-webkit-box-shadow: 0px 0px 6px 0px rgba(28, 28, 28, 0.69);
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-top-right-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-webkit-border-bottom-right-radius: 3px;
+		vertical-align: middle;
+	}
+		#end{
+		background-image:linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+		width:90px;
+		height:20px;
+		color:#000;
+		float:right;
+		margin:10px 10px 10px 0;
+		text-align:center;
+		border:1px  #000;
+		-webkit-box-shadow: 0px 0px 6px 0px rgba(28, 28, 28, 0.69);
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-top-right-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-webkit-border-bottom-right-radius: 3px;
+		vertical-align: middle;
+	}
+	
+	
+
+#home{
+    background-image:linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    width:50px;
+    height:20px;
+    color:#000;
+    margin:10px 0px 0px 10px;
+    text-align:center;
+    border:1px  #000;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(28, 28, 28, 0.69);
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    float:left;
+
+}
+
+#back{
+    background-image:linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+    width:50px;
+    height:20px;
+    color:#000;
+    margin:10px 0px 0px 10px;
+    text-align:center;
+    border:1px  #000;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(28, 28, 28, 0.69);
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    float:left;
+
+}
+
+#container {
+    width:100%;
+    height:100%;
+    margin:0;
+    background-image: url('../img/floor.JPG');
+    background-size:100%;
+    color:#fff;
+
+}
+
+#welcome {
+    width:80%;
+    height:80%;
+    margin-top:20px;
+    background-color:black;
+    color:#fff;
+    font-size:14px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    top:50px;
+    left:10%;
+    position:absolute;
+}
+
+#trackpin {
+position:relative;
+/* top:100px; */
+margin:auto;
+text-align:center;
+    width:90%;
+    background-color:#fff;
+    color:#000;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#seeScores {
+position:relative;
+top:30px;
+margin:auto;
+text-align:center;
+    width:80%;
+    background-color:#fff;
+    color:#000;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#gameinfo h2 {
+    text-align:center;
+
+}
+
+#gameinfo {
+    width:80%;
+    height:55%;
+    margin-top:20px;
+    background-color:black;
+    color:#fff;
+    font-size:14px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    top:50px;
+    position:absolute;
+    left:10%;
+}
+
+#frames {
+    width:100%;
+    height:100%;
+    margin:0;
+    background-color:black;
+    color:#fff;
+    font-size:14px;
+    overflow:hidden;
+    top:0;
+    position:absolute;
+}
+
+#endgame {
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:none;
+    color:#fff;
+    left:0px;
+    margin:0;
+    padding:0;
+    top:50px;
+    position:absolute;
+}
+
+#endgame #trackpin {
+	position:relative;
+	top:60px;
+	margin:auto;
+	text-align:center;
+    width:90%;
+    background-color:#fff;
+    color:#000;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#endgame #seeScores {
+	position:relative;
+	top:130px;
+	margin:auto;
+	text-align:center;
+    width:80%;
+    background-color:#fff;
+    color:#000;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#frame {
+    margin-top:50px;
+}
+
+#info {
+    position:relative;
+    top:20px;
+    width:90%;
+}
+
+#info ul {
+    list-style:none;
+}
+
+#info ul li {
+margin-top:15px;
+margin-bottom:15px;
+}
+
+
+
+#scores {
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:none;
+    color:#fff;
+    position:relative;
+    left:0px;
+    margin:0;
+    padding:0;
+    top:50px;
+    position:absolute;
+    
+}
+
+#scores ul {
+    list-style:none;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#scores ul li {
+    margin:0;
+    padding:5px 10px 5px 10px;
+    color:#fff;
+    border-bottom: 1px solid #ccc;
+    font-size:12px;
+}
+
+#scores ul li:last-child {
+    border:none;
+}
+
+#details {
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:none;
+    color:#fff;
+    position:relative;
+    left:0px;
+    margin:0;
+    padding:0;
+    top:50px;
+    position:absolute;
+    
+}
+
+#details ul {
+    list-style:none;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#details ul li {
+    margin:0;
+    padding:5px 10px 5px 10px;
+    color:#fff;
+    border-bottom: 1px solid #ccc;
+    font-size:12px;
+}
+
+#details ul li:last-child {
+    border:none;
+}
+
+#scoreboard {
+    width:100%;
+    border: 1px solid #fff;
+}
+
+table#scoreboard > tbody > tr:first-child {
+    border-bottom: 1px solid #fff;
+}
+
+#framedetails {
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-image:none;
+    color:#fff;
+    position:relative;
+    left:0px;
+    margin:0;
+    padding:0;
+    top:50px;
+    position:absolute;
+    
+}
+#framelayout {
+	margin:auto;
+}
+
+#ball1layout h3 {
+	margin:auto;
+}
+
+#ball1layout {
+	width:50%;
+	margin:auto;
+	text-align:center;
+}
+
+#ball2layout {
+	width:50%;
+	margin:auto;
+	text-align:center;
+}
+
+#ball3layout {
+	display:none;
+}
+
+
+#start{
+    width:120px;
+    background-color:#fff;
+    color:#000;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:35px;
+    text-align:center;
+    font-size:14px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#gameinfo, #scores, #frames, #endgame, #home, #next, #details, #framedetails, #back {
+    display:none;
+}
+
+#ball {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#ball ul {
+    margin:0;
+    list-style:none;
+    width:100%;
+    float:left;
+
+
+}
+
+#ball ul li {
+width:100%;
+ background:-webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+    display:inline-block;
+    padding:10px;
+    margin:0;
+}
+
+#ball ul li:first-child {
+    border-right:1px solid #ccc;
+}
+
+#pins {
+    width:80%;
+    margin:auto;
+}
+
+#layout {
+    border:none;
+    width:80%;
+    margin:auto;
+    padding-top:10px;
+}
+
+#layout tr {
+    line-height:25px;
+    width:100%
+}
+
+#layout td {
+    width: 25px;
+    padding:5px;
+}
+.dot {
+    width:20px;
+    height:20px;
+}
+
+.down {
+    opacity: 0.4;
+}
+
+.alley, .framenumber {
+    font-size:14px;
+    color:#A90329;
+
+}
+
+.frame li {
+	padding:0;
+}
+
+.ball1count, .ball2count {
+	float:left;
+	border-bottom:1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin:0;
+}
+
+.ball3count {
+	display:none;
+	float:left;
+	border-bottom:1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin:0;
+}
+
+.balls {
+	float:right;
+}
+
+#strike {
+    width:50px;
+    float:right;
+    margin:0 10px 20px 0;
+}
+
+#clear {
+    width:50px;
+    float:right;
+}
+
+#noresults {
+	color:#fff;
+	font-size:14px;
+}
+
+
+.instructions {
+    margin:45px 10px 0 10px;
+    font-size:12px;
+    color:#fff;
+    padding:0;
+}
+.comments {
+    width:90%;
+    height:90px;
+    margin:5px 10px 0px 10px;
+    overflow:scroll;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
